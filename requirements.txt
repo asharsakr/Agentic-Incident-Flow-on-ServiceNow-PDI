@@ -1,0 +1,7 @@
+# make sure that you run python 11 version 
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+google-genai
+httpx

@@ -135,5 +135,4 @@ services/gemini_service.py       Builds the prompt, calls Gemini, parses the dec
 services/servicenow_service.py   Writes the decision back to ServiceNow
 kb_articles.json                 The 5 knowledge base articles used in the prompt
 requirements.txt                 Python dependencies
-.env.example                     List of required environment variables (no real values)
 reflection.md                    Reflection on the hardest parts and what I'd improve

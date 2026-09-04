@@ -1,4 +1,4 @@
-# Task 0 Agentic Incident Flow
+# Agentic Incident Flow
 This is a small service that watches for new ServiceNow incidents, asks
 Gemini to decide what to do with them using a fixed knowledge base, and
 writes the decision back onto the same ticket.

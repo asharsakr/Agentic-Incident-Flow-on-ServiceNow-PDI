@@ -9,6 +9,10 @@ SN_INSTANCE_URL = os.environ["servicenow_url"].rstrip("/")
 SN_USER = os.environ["servicenow_user"]          
 SN_PASS = os.environ["servicenow_pass"]
 
+# print("--- DEBUG ---")
+# print(f"USER SEEN BY PYTHON: >{SN_USER}<")
+# print(f"PASS SEEN BY PYTHON: >{SN_PASS}<")
+
 async def update_incident(sys_id: str, decision: str, message: str) -> None:
 
     url = f"{SN_INSTANCE_URL}/api/now/table/incident/{sys_id}"

@@ -8,7 +8,7 @@ load_dotenv()
 
 client = genai.Client(api_key=os.environ["gemini_api"]) # 1- uploading the API key for gemini
 # 2-loading the five knowledge base articles
-_KB_PATH = os.path.join(os.path.dirname(__file__), "..", "kb_articles.json")
+_KB_PATH = os.path.join(os.path.dirname(__file__), "..", "AI_Engineering_Task0_Assets", "kb_articles.json")
 with open(_KB_PATH, "r") as f:
     kb_articles = json.load(f)["articles"]
 

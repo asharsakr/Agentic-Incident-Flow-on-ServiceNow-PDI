@@ -48,7 +48,7 @@ async def process_incident(payload: IncidentPayload) -> None:
             message=message,
         )
         logger.info(
-            "Incident processed successfully ( decision) =%s",
+            "Incident processed successfully ( decision) = ",
             payload.number, decision,
         )
     except Exception as exc:

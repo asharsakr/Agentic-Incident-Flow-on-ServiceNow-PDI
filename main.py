@@ -32,7 +32,7 @@ async def webhook(payload: IncidentPayload, background_tasks: BackgroundTasks):
     processed_incidents.add(payload.incident_sys_id)
     background_tasks.add_task(process_incident, payload)
 
-    logger.info("Accepted incident , processing in background.", payload.number)
+    logger.info("Accepted incident %s, processing in background.", payload.number)
     return {"status": "accepted", "number": payload.number}
 
 
@@ -42,14 +42,16 @@ async def process_incident(payload: IncidentPayload) -> None:
             short_description=payload.short_description,
             description=payload.description,
         )
+        logger.info("Decision for %s: %s | %s", payload.number, decision, message)
         await update_incident(
             sys_id=payload.incident_sys_id,
             decision=decision,
             message=message,
         )
         logger.info(
-            "Incident processed successfully ( decision) = ",
+            "Incident %s processed successfully -> decision=%s",
             payload.number, decision,
         )
+
     except Exception as exc:
-        logger.error("Failed to process incident :", payload.number, exc)
+        logger.error("Failed to process incident %s: %s", payload.number, exc)

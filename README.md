@@ -1,7 +1,7 @@
 # Agentic Incident Flow
-This is a small service that watches for new ServiceNow incidents, asks
-Gemini to decide what to do with them using a fixed knowledge base, and
-writes the decision back onto the same ticket.
+Link of the Test Video : https://drive.google.com/file/d/11MZuBOJ5FsS1suMmvUslXOcCE1nJpFwy/view?usp=sharing
+
+This is a small service that watches for new ServiceNow incidents, asks Gemini to decide what to do with them using a fixed knowledge base, and writes the decision back onto the same ticket.
 
 ## What you'll need before starting
 
@@ -136,4 +136,3 @@ services/servicenow_service.py   Writes the decision back to ServiceNow
 kb_articles.json                 The 5 knowledge base articles used in the prompt
 requirements.txt                 Python dependencies
 reflection.md                    Reflection on the hardest parts and what I'd improve
-Link of the Test Video : https://drive.google.com/file/d/11MZuBOJ5FsS1suMmvUslXOcCE1nJpFwy/view?usp=sharing

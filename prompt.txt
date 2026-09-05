@@ -8,7 +8,7 @@ Knowledge base articles:
 
 TICKET:
 Short description: {short_description}
-Description: {description if description else "(no further detail provided)"}
+Description: {description}
 
 Decide exactly one of the following:
 1- "respond": an article clearly covers this AND the ticket gives enough
@@ -34,4 +34,4 @@ explanation text before or after in exactly this shape:
 If you decide "respond", the message should be the fix instructions.
 If you decide "ask", the message should be the clarifying question to send
 the customer.
-If you decide "escalate", the message should briefly explain why."""
+If you decide "escalate", the message should briefly explain why.

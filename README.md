@@ -137,3 +137,4 @@ kb_articles.json                 The 5 knowledge base articles used in the promp
 requirements.txt                 Python dependencies
 .env.example                     List of required environment variables (no real values)
 reflection.md                    Reflection on the hardest parts and what I'd improve
+Link of the Test Video : https://drive.google.com/file/d/11MZuBOJ5FsS1suMmvUslXOcCE1nJpFwy/view?usp=sharing
